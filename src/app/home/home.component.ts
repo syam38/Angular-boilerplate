@@ -11,7 +11,16 @@ export class HomeComponent implements OnInit {
   category:any;
   searchCategory:any;
   constructor(service:AppService) {
-    this.items = [{age:25},{age:28},{age:89}];
+    this.items = [{age:25},{age:28},{age:89},{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89},{age:25},{age:28},{age:89},{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}];
+      ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}
    }
 
   ngOnInit() {

@@ -5,6 +5,10 @@
 <select [(ngModel)] = "searchCategory">
   <option value="age">Age</option>  
 </select>
+<ul>  
+  <li *ngFor="let item of items | paginate: { itemsPerPage: 10, currentPage: p }"> {{item.age}} </li>
+</ul>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 
 <div *ngFor = "let item of items">{{item.age}}</div>
