@@ -15,12 +15,12 @@ export class HomeComponent implements OnInit {
       ,{age:25},{age:28},{age:89},{age:25},{age:28},{age:89},{age:25},{age:28},{age:89}
       ,{age:25},{age:28},{age:89}
       ,{age:25},{age:28},{age:89}
-      ,{age:25},{age:28},{age:89}];
       ,{age:25},{age:28},{age:89}
       ,{age:25},{age:28},{age:89}
       ,{age:25},{age:28},{age:89}
       ,{age:25},{age:28},{age:89}
       ,{age:25},{age:28},{age:89}
+      ,{age:25},{age:28},{age:89}]; 
    }
 
   ngOnInit() {
