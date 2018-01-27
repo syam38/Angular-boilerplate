@@ -1,3 +1,10 @@
 <p>
   home works!
 </p>
+<input [(ngModel)] = "searchTerm" (ngModelChange) = "search()"/>
+<select [(ngModel)] = "searchCategory">
+  <option value="age">Age</option>  
+</select>
+
+
+<div *ngFor = "let item of items">{{item.age}}</div>

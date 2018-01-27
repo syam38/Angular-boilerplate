@@ -6,10 +6,26 @@ import { AppService } from '../app.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(service:AppService) { }
+  items:any;
+  searchTerm:any;
+  category:any;
+  searchCategory:any;
+  constructor(service:AppService) {
+    this.items = [{age:25},{age:28},{age:89}];
+   }
 
   ngOnInit() {
+  }
+
+  search(){
+    this.items  = this.items.filter((a)=>{
+      if((a[this.searchCategory])>this.searchTerm)
+            return a;
+    })  
+  }
+
+  searchByCatergory(){
+
   }
 
 }
