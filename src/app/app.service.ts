@@ -44,7 +44,9 @@ export class AppService {
      checkCredentials(){
       if (localStorage.getItem("user") === null){
            this._router.navigate(['Login']);
+           return false;
       }
+      return true;
     }
   
   
