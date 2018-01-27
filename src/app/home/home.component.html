@@ -5,9 +5,9 @@
 <select [(ngModel)] = "searchCategory">
   <option value="age">Age</option>  
 </select>
-<ul>  
-  <li *ngFor="let item of items | paginate: { itemsPerPage: 10, currentPage: p }"> {{item.age}} </li>
-</ul>
+<div class="flex-container">  
+  <div *ngFor="let item of items | paginate: { itemsPerPage: 15, currentPage: p }"> {{item.age}} </div>
+</div>
 <pagination-controls (pageChange)="p = $event"></pagination-controls>
 
 
